@@ -3,11 +3,11 @@
 <%= link_to "New Portfolio", new_portfolio_path %>
 
 <% @portfolio_items.each do |portfolio| %>
-  <p><%= portfolio.title %></p>
+  <p><%= link_to portfolio.title, portfolio_path(portfolio) %></p>
   <p><%= portfolio.subtitle %></p>
   <p><%= portfolio.body %></p>
   <%= image_tag portfolio.thumb_image unless portfolio.thumb_image.nil? %>
-  <p><%= link_to "Edit", edit_portfolio_path(portfolio.id) %></p>
+  <p><%= link_to "Edit", edit_portfolio_path(portfolio) %></p>
 
   <hr>
 <% end %>

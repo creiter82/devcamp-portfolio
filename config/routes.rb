@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'angular-items', to: 'portfolios#angular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
-  resources :blogs do
+  resources :blogs, path: "blog" do
     member do
       get :toggle_status
     end

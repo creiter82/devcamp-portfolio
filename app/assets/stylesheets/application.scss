@@ -160,3 +160,22 @@ body {
     width: 55rem;
   }
 }
+
+/*
+ * Custom Styles
+ */
+
+.card {
+  margin-top: 100px;
+  margin-bottom: 100px;
+} 
+
+.card-block {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
+  text-shadow: none;
+}

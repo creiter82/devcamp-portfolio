@@ -2,7 +2,7 @@
 
   <% if blog.errors.any? %>
     <%= blog.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, title: "OOPS", sticky: false) %>
+      <%= alert_generator error, 'OOPS' %>
     <% end %>  
   <% end %>
 

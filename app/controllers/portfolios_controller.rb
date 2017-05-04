@@ -27,7 +27,7 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.new(portfolio_params)
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: "#{@portfolio_item.title} was successfully created." }
+        format.html { redirect_to portfolio_show_path(@portfolio_item), notice: "#{@portfolio_item.title} was successfully created." }
       else
         format.html { render :new }
       end
@@ -40,7 +40,7 @@ class PortfoliosController < ApplicationController
   def update
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
-        format.html { redirect_to portfolios_path, notice: "#{@portfolio_item.title} was successfully updated." }
+        format.html { redirect_to portfolio_show_path(@portfolio_item), notice: "#{@portfolio_item.title} was successfully updated." }
       else
         format.html { render :edit }
       end

@@ -8,6 +8,10 @@
     <div class="col-md-5">
       <h1><%= @portfolio_item.title %></h1>
 
+      <% if logged_in?(:site_admin) %>
+        <%= link_to 'Edit', edit_portfolio_path(@portfolio_item), class: 'btn btn-sm btn-warning' %>
+      <% end %>
+
       <hr>
 
       <em><%= @portfolio_item.subtitle %></em>

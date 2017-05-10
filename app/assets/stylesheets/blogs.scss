@@ -174,18 +174,25 @@ h6, .h6 {
  * Custom Styles
  */
 
- .comment-card > .card {
+.comment-card > .card {
   margin-top: 15px;
- }
+}
 
- .comment-user {
+.comment-user {
   margin-top: 10px;
   font-size: .8em;
   font-style: italic;
- }
+}
 
- .comment-name {
+.comment-name {
   font-weight: 700;
- }
+}
+
+.sidebar-module {
+  custom  {
+    color: #999;
+    font-size: .8em;
+  }
+}
 
  

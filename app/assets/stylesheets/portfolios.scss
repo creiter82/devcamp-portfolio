@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "jquery-ui";
+@import "font-awesome";
 @import "gritter";
 
 body {
@@ -34,6 +35,12 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #f7f7f7;
+  .warning .fa {
+    color: #f0ad4e;
+  }
+  .danger .fa {
+    color: #d9534f;
+  }
 }
 
 .card {
@@ -69,5 +76,14 @@ footer p {
 
 .new-portfolio-link {
   margin-bottom: 20px;
+}
+
+.portfolio-container {
+  .warning .fa {
+    color: #f0ad4e;
+  }
+  .danger .fa {
+    color: #d9534f;
+  }
 }
 

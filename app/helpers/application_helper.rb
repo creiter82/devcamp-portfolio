@@ -24,10 +24,6 @@ module ApplicationHelper
   def nav_items
     [
       {
-        url: root_path,
-        title: 'Home'
-      },
-      {
         url: about_me_path,
         title: 'About Me'
       },

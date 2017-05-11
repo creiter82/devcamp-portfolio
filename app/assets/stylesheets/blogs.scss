@@ -195,4 +195,17 @@ h6, .h6 {
   }
 }
 
+.breadcrumb {
+  .warning .fa {
+    color: #f0ad4e;
+  }
+  .danger .fa {
+    color: #d9534f;
+  }
+}
+
+.blogcrumb a {
+  margin: 0 5px 0 5px;
+}
+
  

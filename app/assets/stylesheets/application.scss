@@ -255,7 +255,10 @@ hr {
     } 
     a {
       color: $link-color; 
-    }   
+    } 
+    .skill {
+      margin-top: 10px;
+    }  
   }
   .card-block {
     margin-top: 5px;
@@ -263,6 +266,9 @@ hr {
   }
   .collapse-card {
     padding: 10px;
+  }
+  .progress {
+    background-color: darken(#eceeef, 5%);
   }
 }
 

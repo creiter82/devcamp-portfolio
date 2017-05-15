@@ -33,12 +33,23 @@ html,
 body {
   height: 100%;
   /*background-color: #333;*/
+  font-family: 'Raleway', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6, {
+  font-family: 'Playfair Display', serif;
+}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -221,3 +232,57 @@ body {
 .tech-news > .card {
   padding: 30px;
 }
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: rgba(0,0,0,.1);
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 1.5em 0 1.5em 0;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+  text-shadow: none;
+  h1 {
+    text-align: center;
+  }
+  .card {
+    padding: 40px;
+    background-color: #efefef;
+    hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0,0,0,.1);
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: rgba(0, 0, 0, 0.0980392);
+    } 
+    a {
+      color: $link-color; 
+    } 
+    .skill {
+      margin-top: 10px;
+    }  
+  }
+  .card-block {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .collapse-card {
+    padding: 10px;
+  }
+  .progress {
+    background-color: darken(#eceeef, 5%);
+  }
+}
+
+
+
+

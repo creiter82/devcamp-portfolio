@@ -1,25 +1,117 @@
-<h1>Who am I?</h1>
+<div class="app-card-container">
+  <div class="card">
 
-<hr>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile.jpg", width: 300, alt: "Profile Image", class: 'rounded' %>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "profile.jpg", width: 300, alt: "Profile Image" %>
-  </div>
-  
-  <div class="col-md-8">
-    <p>
-      I'm glad you asked!  With over 15 years as a professional firefighter and paramedic I've dabbled in many arenas trying to become a <em>"successful"</em> entrepreneur.
-    </p>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning"
+                      role="progressbar"
+                      aria-valuenow="<%= skill.percent_utilized %>"
+                      aria-valuemax="100"
+                      style="width: <%= skill.percent_utilized %>%"
+                >
+                </div>
+              </div>
+            </div>
+          <% end %>  
+        </div>
+      </div>
+      
+      <div class="col-md-8">
+        <h1>Who am I?</h1>
 
-    <p>
-      This quest to entrepreneurship brought me to software development, which has been my focus for a few years now.  When I say software development, I mean <code>Ruby</code> and when I say Ruby, I mean Ruby on the <code>Ruby on Rails</code> framework.
-    </p>
+        <hr>
+        <p>
+          I'm glad you asked!  With over 15 years as a professional firefighter and paramedic I've dabbled in many arenas trying to become a <em>"successful"</em> entrepreneur.
+        </p>
 
-    <p>
-      Most of my work has been as a hobby developer, but now I wish to hit the open seas!
-    </p>
+        <p>
+          This quest to entrepreneurship brought me to software development, which has been my focus for a few years now.  When I say software development, I mean <code>Ruby</code> and when I say Ruby, I mean Ruby on the <code>Ruby on Rails</code> framework.
+        </p>
+
+        <p>
+          Most of my work has been as a hobby developer, but now I wish to hit the open seas!
+        </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#hobbies"
+            aria-expanded="false"
+            aria-controler="hobbies"
+          >
+            Hobbies
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card collapse-card card-block">
+              Intrinsic Consulting
+            </div>
+            <div class="card collapse-card card-block">
+              Aurora Fire Dept
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card collapse-card card-block">
+              Stanford
+            </div>
+            <div class="card collapse-card card-block">
+              Harvard
+            </div>
+          </div>
+
+          <div class="collapse" id="hobbies">
+            <div class="card collapse-card card-block">
+              Snowboarding
+            </div>
+            <div class="card collapse-card card-block">
+              Camping
+            </div>
+            <div class="card collapse-card card-block">
+              Woodworking
+            </div>
+          </div>
+        </p>
+
+      </div>
+    </div>  
   </div>
 </div>
+
+
+
 
 

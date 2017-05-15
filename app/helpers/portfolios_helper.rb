@@ -14,4 +14,11 @@ module PortfoliosHelper
     end
   end
 
+  def portfolio_admin_links var, style = ''
+    if logged_in?(:site_admin)  
+      (link_to fa_icon("pencil #{style}"), edit_portfolio_path(var), class: 'warning') + " ".html_safe +
+      (link_to fa_icon("trash #{style}"), var, class: 'danger', method: :delete, data: { confirm: "Are you sure you want to delete \'#{var.title}\'?" })
+    end  
+  end
+
 end

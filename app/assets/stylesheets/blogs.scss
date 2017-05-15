@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Raleway', sans-serif;
   color: #555;
 }
 
@@ -23,7 +23,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: normal;
   color: #333;
 }
@@ -174,18 +174,58 @@ h6, .h6 {
  * Custom Styles
  */
 
- .comment-card > .card {
+.comment-card > .card {
   margin-top: 15px;
- }
+}
 
- .comment-user {
+.comment-user {
   margin-top: 10px;
   font-size: .8em;
   font-style: italic;
- }
+}
 
- .comment-name {
+.comment-name {
   font-weight: 700;
- }
+}
+
+.sidebar-module {
+  custom  {
+    color: #999;
+    font-size: .8em;
+  }
+}
+
+.breadcrumb {
+  .warning .fa {
+    color: #f0ad4e;
+  }
+  .danger .fa {
+    color: #d9534f;
+  }
+}
+
+.blogcrumb a {
+  margin: 0 5px 0 5px;
+}
+
+.blog-nav {
+  margin-bottom: 40px;
+}
+
+// .navbar {
+//   background-color: lighten(#428bca, 20%);
+//   .navbar-brand {
+//     color: white;
+//   }
+//   button {
+//     background-color: darken(#f7f7f7, 5%);
+//   }
+// }
+
+.blog-sidebar-source {
+  margin-top: 20px;
+}
+
+
 
  

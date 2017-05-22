@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
     else
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
-    @page_title = "My Portfolio Blog"
+    @page_title = "Blog | Cameron Reiter"
   end
 
   # GET /blogs/1
@@ -23,7 +23,7 @@ class BlogsController < ApplicationController
       @blog = Blog.includes(:comments).friendly.find(params[:id])
       @comment = Comment.new
 
-      @page_title = @blog.title
+      @page_title = "#{@blog.title} | Cameron Reiter"
       @seo_keywords = @blog.body
     else
       redirect_to blogs_path, notice: "You are not authorized to view this page"

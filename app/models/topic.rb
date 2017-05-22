@@ -4,6 +4,6 @@ class Topic < ApplicationRecord
 
   # Custom scope for blog sidebar to show topics with posts
   def self.with_blogs
-    includes(:blogs).where.not(blogs: { id: nil })
+    includes(:blogs).where.not(blogs: { id: nil, status: 'draft' })
   end
 end
